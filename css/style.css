@@ -257,7 +257,7 @@ h1 {
 
     #contact p {
         font-size: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         padding: 0 7.5rem;
     }
 
@@ -316,6 +316,10 @@ h1 {
         padding-left: 2rem;
     }
 
+    .main-nav {
+        margin-bottom: 7rem;
+      }
+
     .main-nav ul {
         list-style: none;
         float: right;
@@ -327,19 +331,30 @@ h1 {
         font-size: 1rem;
         display: inline-block;
     }
+    
+      header p {
+        width: 60%;
+        text-align: left;
+        line-height: 2;
+      }
 
-.main-nav a {
-    padding: 0 2rem 0 2rem;
-}
+    .main-nav a {
+        padding: 0 2rem 0 2rem;
+    }
 
-.header-image {
-    float: right;
-}
+    .header-image {
+        width: 40%;
+        float: right;
+        max-width: 100%;
+    }
 
-header p {
-    font-size: 1.1rem;
-    text-align: left;
-    margin: 0;
+    header p {
+        width: 60%;
+        font-size: 1.2rem;
+        text-align: left;
+        line-height: 2;
+        margin: 0;
+        padding-right: 2.5rem;
 }
 
 /*---- Portfolio Styles  */
@@ -359,7 +374,7 @@ header p {
 
 .portfolio-element {
     margin-bottom: 3.5rem;
-    width: 50%;
+    width: 33.3%;
     float: left;
     padding: 0 .5rem;
 }
@@ -395,8 +410,8 @@ header p {
 
 #contact p {
     font-size: 1rem;
-    margin-bottom: 3rem;
-    padding: 0 7.5rem;
+    margin-bottom: 2rem;
+    padding: 0 15rem;
 }
 
 /*---- Footer Styles ----*/
