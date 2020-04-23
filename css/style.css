@@ -48,123 +48,113 @@ h1 {
     text-decoration: none;
     color: rgba(0, 0, 0, .7);
     font-weight: bold;
+    padding: .5rem 5rem;
 }
 
-/*---- Portfolio Styles ----*/
+.main-nav li {
+    width: 90%;
+    margin: 0 auto .5rem auto;
+    background-color: white;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
 
-@media (max-width: 767px) {
+.header-image {
+    width: 60%;
+    margin-top: 1rem;
+}
 
-/*---- HEADER STYLES ----*/
-
-    .main-nav li {
-        width: 90%;
-        margin: 0 auto .5rem auto;
-        background-color: white;
-        padding: .5rem 1rem;
-        text-transform: uppercase;
-        font-size: 1rem;
-    }
-
-    .main-nav a {
-        padding: .5rem 5rem ;
-    }
-
-    .header-image {
-        width: 60%;
-        margin-top: 1rem;
-    }
-
-    header p {
-        padding: 1rem 1.5rem;
-        font-size: .9rem;
-    }
+header p {
+    padding: 1rem 1.5rem;
+    font-size: .9rem;
+}
 
 /*---- Portfolio Styles  ----*/
 
-    #portfolio {
-        width: 85%;
-        margin: 0 auto;
-        text-align: center;
-    }
+#portfolio {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
 
-    #portfolio h2 {
-        text-transform: uppercase;
-        font-size: 1rem;
-        margin: 3rem auto;
-        font-weight: bold;
-    }
+#portfolio h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 3rem auto;
+    font-weight: bold;
+}
 
-    .portfolio-element {
-        margin-bottom: 3.5rem;
-    }
+.portfolio-element {
+    margin-bottom: 3.5rem;
+}
 
-    .portfolio-image {
-        width: 100%;
-    }
+.portfolio-image {
+    width: 100%;
+}
 
-    #portfolio h4 {
-        font-size: 1.2rem;
-    }
+#portfolio h4 {
+    font-size: 1.2rem;
+}
 
-    #portfolio p {
-        font-size: .9rem;
-    }
+#portfolio p {
+    font-size: .9rem;
+}
 
 /*---- Contact Styles ----*/
 
-    #contact {
-        background-color: whitesmoke;
-        text-align: center;
-        padding: 4rem 2rem;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-    }
-
-    #contact h2 {
-        text-transform: uppercase;
-        font-size: 1rem;
-        font-weight: bold;
-        margin-bottom: 3rem;
-        margin-top: 0;
-    }
-
-    #contact p {
-        font-size: .9rem;
-        margin-bottom: 3rem;
-    }
-
-    /*---- Footer Styles ----*/
-
-    footer {
-        background-color: whitesmoke;
-        padding-top: 1rem;
-    }
-
-    footer p {
-        font-size: 1rem;
-        float: left;
-        font-weight: bold;
-        padding: 1rem;
-    }
-
-    .footer-nav ul {
-        display: none;
-    }
-
-    .back-to-top {
-        float: right;
-        padding: 1rem;
-    }
-
-    .back-to-top a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: rgba(0, 0, 0, .7);
-        font-size: 1rem;
-        font-weight: bold;
-    }
-
+#contact {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
+#contact h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+#contact p {
+    font-size: .9rem;
+    margin-bottom: 3rem;
+}
+
+/*---- Footer Styles ----*/
+
+footer {
+    background-color: whitesmoke;
+    padding-top: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+    float: left;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.footer-nav ul {
+    display: none;
+}
+
+.back-to-top {
+    float: right;
+    padding: 1rem;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .7);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/*------ MEDIA QUERY 1 FOR SCREENS AT LEAST 768PX ------*/
 
 @media (min-width: 768px) {
 
@@ -183,6 +173,8 @@ h1 {
         text-transform: uppercase;
         font-size: 1rem;
         display: inline-block;
+        width: unset;
+        background-color: transparent;
     }
 
     .main-nav a {
@@ -208,30 +200,13 @@ h1 {
 
     #portfolio {
         width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #portfolio h2 {
-        text-transform: uppercase;
-        font-size: 1rem;
-        margin: 3rem auto;
-        font-weight: bold;
     }
 
     .portfolio-element {
-        margin-bottom: 3.5rem;
         width: 50%;
+        min-height: 400px;
         float: left;
         padding: 0 .5rem;
-    }
-
-    .portfolio-image {
-        width: 100%
-    }
-
-    #portfolio h4 {
-        font-size: 1.2rem;
     }
 
     #portfolio p {
@@ -239,13 +214,6 @@ h1 {
     }
 
 /*---- Contact Styles ----*/
-
-    #contact {
-        background-color: whitesmoke;
-        text-align: center;
-        padding: 4rem 2rem;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-    }
 
     #contact h2 {
         text-transform: uppercase;
@@ -264,22 +232,14 @@ h1 {
 /*---- Footer Styles ----*/
 
     footer {
-        background-color: whitesmoke;
-        padding-top: 1rem;
         padding-bottom: 2rem;
-    }
-
-    footer p {
-        font-size: 1rem;
-        float: left;
-        font-weight: bold;
-        padding: 1rem;
     }
 
     .footer-nav ul {
         padding: 1rem;
         list-style: none;
         float: right;
+        display: block;
     }
 
     .footer-nav li {
@@ -298,18 +258,14 @@ h1 {
     .back-to-top {
         display: none;
     }
-
-
+    
 }
+
+/*------ MEDIA QUERY 1 FOR SCREEN LARGER THAN 1024PX ------*/
 
 @media (min-width: 1024px) {
    
 /*---- HEADER STYLES ----*/
-
-    header {
-        padding-top: 2rem;
-        padding-bottom: 4rem;
-    }
 
     h1 {
         float: left;
@@ -327,14 +283,11 @@ h1 {
 
     .main-nav li {
         float: left;
-        text-transform: uppercase;
-        font-size: 1rem;
     }
     
       header p {
-        width: 60%;
-        text-align: left;
         line-height: 2;
+        padding-left: 2rem;
       }
 
     .main-nav a {
@@ -345,110 +298,25 @@ h1 {
         width: 40%;
         float: right;
         max-width: 100%;
+        margin-top: 0;
     }
 
     header p {
-        width: 60%;
         font-size: 1.2rem;
-        text-align: left;
         line-height: 2;
-        margin: 0;
         padding-right: 2.5rem;
 }
 
-/*---- Portfolio Styles  */
-
-#portfolio {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#portfolio h2 {
-    text-transform: uppercase;
-    font-size: 1rem;
-    margin: 3rem auto;
-    font-weight: bold;
-}
+/*---- Portfolio Styles ----*/
 
 .portfolio-element {
-    margin-bottom: 3.5rem;
     width: 33.3%;
-    float: left;
-    padding: 0 .5rem;
-}
-
-.portfolio-image {
-    width: 100%
-}
-
-#portfolio h4 {
-    font-size: 1.2rem;
-}
-
-#portfolio p {
-    font-size: 1rem;
 }
 
 /*---- Contact Styles ----*/
 
-#contact {
-    background-color: whitesmoke;
-    text-align: center;
-    padding: 4rem 2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-
-#contact h2 {
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 3rem;
-    margin-top: 0;
-}
-
 #contact p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
     padding: 0 15rem;
-}
-
-/*---- Footer Styles ----*/
-
-footer {
-    background-color: whitesmoke;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-}
-
-footer p {
-    font-size: 1rem;
-    float: left;
-    font-weight: bold;
-    padding: 1rem;
-}
-
-.footer-nav ul {
-    padding: 1rem;
-    list-style: none;
-    float: right;
-}
-
-.footer-nav li {
-    font-size: 1rem;
-    float: left;
-}
-
-.footer-nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, .7);
-    font-weight: bold;
-    padding: 0 1rem 1rem 1rem;
-}
-
-.back-to-top {
-    display: none;
 }
 
 }
